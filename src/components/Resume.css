@@ -1,0 +1,93 @@
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.resume-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.resume-actions .btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.download-icon, .open-icon {
+  flex-shrink: 0;
+}
+
+.resume-viewer {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background-color: var(--card-bg);
+}
+
+.resume-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  transition: opacity 0.3s ease;
+}
+
+.resume-iframe.loading {
+  opacity: 0;
+}
+
+.resume-iframe.loaded {
+  opacity: 1;
+}
+
+.resume-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card-bg);
+  z-index: 1;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: var(--primary-color);
+  animation: spin 1s ease-in-out infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-viewer {
+    height: 500px;
+  }
+  
+  .resume-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .resume-actions .btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}
