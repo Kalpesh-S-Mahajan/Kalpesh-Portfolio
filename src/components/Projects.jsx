@@ -10,7 +10,7 @@ const Projects = () => {
       title: "FlameGuard: AI-Powered Fire Detection System",
       description:
         "FireVision uses ML and image processing to detect fires in real-time, providing instant alerts for faster response and improved safety.",
-      image: "./public/images/fire.png",
+      image: "./src/assets/fire.png",
       category: "backend",
       technologies: ["Pyhton", "YOLOv8", "Open-CV"],
       github: "https://github.com/Kalpesh-S-Mahajan/firedetection",
@@ -31,7 +31,7 @@ const Projects = () => {
       title: "LynxLuminate Studio:Image Converter",
       description:
         "LynxLuminate Studio - Transforming Images, One Click at a Time!",
-      image: "./public/images/imageEditor.png",
+      image: "./src/assets/imageEditor.png",
       category: "fullstack",
       technologies: ["Python", "Flask", "OpenCV", "Html", "Css", "JavaScript"],
       github: "https://github.com/Kalpesh-S-Mahajan/flask-image-editor-main",

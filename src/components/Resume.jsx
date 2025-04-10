@@ -22,7 +22,7 @@ const Resume = () => {
         <div className="resume-container">
           <div className="resume-actions">
             <a
-              href="./public\images\Kalpesh_CV.pdf"
+              href="./src\assets\Kalpesh_CV.pdf"
               download="Kalpesh_CV.pdf"
               className="btn btn-primary"
             >
@@ -45,7 +45,7 @@ const Resume = () => {
               Download Resume
             </a>
             <a
-              href="./public\images\Kalpesh_CV.pdf"
+              href="./src\assets\Kalpesh_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline"
@@ -78,7 +78,7 @@ const Resume = () => {
               </div>
             )}
             <iframe
-              src="./public\images\Kalpesh_CV.pdf"
+              src="./src\assets\Kalpesh_CV.pdf"
               title="Resume"
               className={`resume-iframe ${isLoading ? "loading" : "loaded"}`}
               onLoad={handleIframeLoad}

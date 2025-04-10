@@ -20,7 +20,7 @@ const About = () => {
 
         <div className="about-content">
           <div className="about-image">
-            <img src="./public\images\aboutImage.jpg" alt="About me" />
+            <img src="./src\assets\aboutImage.jpg" alt="About me" />
           </div>
 
           <div className="about-info">
@@ -65,7 +65,7 @@ const About = () => {
                   View Resume
                 </a>
                 <a
-                  href="./public\images\Kalpesh_CV.pdf"
+                  href="./src\assets\Kalpesh_CV.pdf"
                   download="Kalpesh_CV.pdf"
                   className="btn btn-outline"
                 >
