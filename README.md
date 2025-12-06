@@ -1,12 +1,55 @@
-# React + Vite
+# 🌐 Kalpesh Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🔗 Live Demo  
+https://kalpesh-portfolio-w9j3.vercel.app/
 
-Currently, two official plugins are available:
+A modern and responsive developer portfolio showcasing my skills, experience, and projects.  
+Built with **React**, **Tailwind CSS**, and deployed on **Vercel**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
+- Modern and clean UI/UX  
+- About section with education & certifications  
+- Skills grid with categorized technologies  
+- Projects with live demo and GitHub links  
+- Fully responsive for all devices  
+- Resume view & download option  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+### **Frontend**
+- React.js  
+- Tailwind CSS  
+- JavaScript (ES6+)  
+- React Icons  
+
+### **Deployment**
+- Vercel  
+
+---
+
+## 📂 Project Structure
+
+├── public/
+├── src/
+│ ├── assets/
+│ ├── components/
+│ ├── pages/
+│ ├── App.jsx
+│ └── main.jsx
+└── README.md
+
+---
+
+## 📧 Contact
+**Kalpesh Mahajan**  
+📩 Email: kalpeshmahajan325@gmail.com  
+🐙 GitHub: https://github.com/Kalpesh-S-Mahajan  
+
+---
+
+## 📝 License
+MIT License
