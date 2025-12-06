@@ -1,6 +1,12 @@
 import { useState } from "react";
 import "./Projects.css";
-
+import img3 from "../assets/fire.png";
+import img4 from "../assets/imageEditor.png";
+import img5 from "../assets/movieSearch.png";
+import img6 from "../assets/remind.png";
+import img7 from "../assets/Digischolar.png";
+import img8 from "../assets/storeplus.png";
+import img9 from "../assets/taskify.png";
 const Projects = () => {
   const [filter, setFilter] = useState("all");
 
@@ -10,63 +16,113 @@ const Projects = () => {
       title: "FlameGuard: AI-Powered Fire Detection System",
       description:
         "FireVision uses ML and image processing to detect fires in real-time, providing instant alerts for faster response and improved safety.",
-      image: "./src/assets/fire.png",
+      image: img3,
       category: "backend",
       technologies: ["Pyhton", "YOLOv8", "Open-CV"],
       github: "https://github.com/Kalpesh-S-Mahajan/firedetection",
       demo: "https://github.com/Kalpesh-S-Mahajan/firedetection",
     },
-    // {
-    //   id: 2,
-    //   title: "Portfolio Website",
-    //   description: "A responsive portfolio website built with React and Vite.",
-    //   image: "https://via.placeholder.com/600x400",
-    //   category: "frontend",
-    //   technologies: ["React", "Vite", "CSS"],
-    //   github: " ",
-    //   demo: " ",
-    // },
+    {
+      id: 2,
+      title: "Movie_Searching_App",
+      description:
+        "A sleek web app to instantly find movies by title, showing the poster, genre, year, and a quick plot — powered by the OMDb API..",
+      image: img5,
+      category: "frontend",
+      technologies: ["React", "Vite", "CSS"],
+      github: " https://github.com/Kalpesh-S-Mahajan/Movie-Searching-app",
+      demo: "https://github.com/Kalpesh-S-Mahajan/Movie-Searching-app ",
+    },
     {
       id: 3,
       title: "LynxLuminate Studio:Image Converter",
       description:
         "LynxLuminate Studio - Transforming Images, One Click at a Time!",
-      image: "./src/assets/imageEditor.png",
+      image: img4,
       category: "fullstack",
       technologies: ["Python", "Flask", "OpenCV", "Html", "Css", "JavaScript"],
       github: "https://github.com/Kalpesh-S-Mahajan/flask-image-editor-main",
       demo: "https://github.com/Kalpesh-S-Mahajan/flask-image-editor-main",
     },
-    // {
-    //   id: 4,
-    //   title: "Weather Dashboard",
-    //   description: "A weather dashboard that displays current and forecasted weather data.",
-    //   image: "https://via.placeholder.com/600x400",
-    //   category: "frontend",
-    //   technologies: ["JavaScript", "HTML/CSS", "API Integration"],
-    //   github: "https://github.com",
-    //   demo: "https://demo-link.com"
-    // },
-    // {
-    //   id: 5,
-    //   title: "Image Processing API",
-    //   description: "A RESTful API for image processing and manipulation.",
-    //   image: "https://via.placeholder.com/600x400",
-    //   category: "backend",
-    //   technologies: ["Node.js", "Express", "OpenCV", "Python"],
-    //   github: "https://github.com",
-    //   demo: "https://demo-link.com"
-    // },
-    // {
-    //   id: 6,
-    //   title: "Social Media Dashboard",
-    //   description: "A dashboard for managing and analyzing social media accounts.",
-    //   image: "https://via.placeholder.com/600x400",
-    //   category: "frontend",
-    //   technologies: ["React", "Chart.js", "CSS"],
-    //   github: "https://github.com",
-    //   demo: "https://demo-link.com"
-    // }
+    {
+      id: 4,
+      title: "Reminder App",
+      description:
+        "Remind Me is a JSP-based web application designed to help users stay organized by allowing them to add, view, edit, and delete reminders. It features a clean dashboard interface and ensures users never miss important tasks or events.",
+      image: img6,
+      category: "fullstack",
+      technologies: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "JSP",
+        "Servlets",
+        "Java",
+        "MySQL",
+      ],
+      github: "https://github.com/Kalpesh-S-Mahajan/RemainderApplication",
+      demo: "https://github.com/Kalpesh-S-Mahajan/RemainderApplication",
+    },
+
+    {
+      id: 5,
+      title: "DigiScholar: Your Gateway to Educational Funding",
+      description:
+        "DigiScholar is a smart platform built with Java EE to discover, apply, and manage scholarships effortlessly.",
+      image: img7,
+      category: "fullstack",
+      technologies: [
+        "Java",
+        "JSP",
+        "Servlets",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "JDBC",
+        "Apache Tomcat",
+      ],
+      github: "https://github.com/Kalpesh-S-Mahajan/DigiScholar",
+      demo: "https://github.com/Kalpesh-S-Mahajan/DigiScholar",
+    },
+
+    {
+      id: 6,
+      title: "StorePulse – Intelligent Store Rating & Review Management",
+      description:
+        "An AI-powered platform for managing store ratings, analyzing customer sentiment, and providing real-time insights with an advanced admin dashboard.",
+      image: img8,
+      category: "fullstack",
+      technologies: [
+        "React",
+        "TailwindCSS",
+        "Node.js",
+        "Express",
+        "Sequelize",
+        "PostgreSQL",
+        "JWT",
+        "AI Sentiment Analysis",
+      ],
+      github: "https://github.com/Kalpesh-S-Mahajan/storeplus-rating", // add your repo link
+      demo: "https://github.com/Kalpesh-S-Mahajan/storeplus-rating", // add your link if deployed
+    },
+    {
+      id: 7,
+      title: "SmartTaskify – Employee Task Management System",
+      description:
+        "A smart task management system where admins assign tasks and employees update status. Features dashboards, role-based login, and elegant UI.",
+      image: img9, // replace with screenshot if needed
+      category: "frontend",
+      technologies: [
+        "React",
+        "TailwindCSS",
+        "LocalStorage",
+        "Context API",
+        "Vercel",
+      ],
+      github: "https://github.com/Kalpesh-S-Mahajan/SmartTaskify",
+      demo: "https://smart-taskify-ten.vercel.app/",
+    },
   ];
 
   const filteredProjects =

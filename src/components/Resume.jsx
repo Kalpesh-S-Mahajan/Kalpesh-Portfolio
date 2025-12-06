@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Resume.css";
-
+import obj2 from "../assets/Kalpesh_CV.pdf";
 const Resume = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -22,7 +22,7 @@ const Resume = () => {
         <div className="resume-container">
           <div className="resume-actions">
             <a
-              href="./src\assets\Kalpesh_CV.pdf"
+              href={obj2}
               download="Kalpesh_CV.pdf"
               className="btn btn-primary"
             >
@@ -45,7 +45,7 @@ const Resume = () => {
               Download Resume
             </a>
             <a
-              href="./src\assets\Kalpesh_CV.pdf"
+              href={obj2}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline"
@@ -78,7 +78,7 @@ const Resume = () => {
               </div>
             )}
             <iframe
-              src="./src\assets\Kalpesh_CV.pdf"
+              src={obj2}
               title="Resume"
               className={`resume-iframe ${isLoading ? "loading" : "loaded"}`}
               onLoad={handleIframeLoad}

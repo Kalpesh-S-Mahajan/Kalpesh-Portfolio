@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
-
+import img1 from "../assets/profile.jpg";
+import { SiCodechef } from "react-icons/si";
 import "./Hero.css";
 
 const Hero = () => {
@@ -7,7 +8,7 @@ const Hero = () => {
   const cursorRef = useRef(null);
 
   useEffect(() => {
-    const textArray = ["Web Developer", "UI/UX Designer", "Problem Solver"];
+    const textArray = ["Web Developer", "Problem Solver"];
     const typingDelay = 100;
     const erasingDelay = 50;
     const newTextDelay = 2000;
@@ -77,8 +78,8 @@ const Hero = () => {
               </p>
             </div>
             <p className="hero-description">
-              Creative Web & Software Developer | Building Engaging & Scalable
-              Solutions with HTML, CSS, JavaScript, Java & Python.
+              Creative Full-Stack Developer | Building fast, scalable solutions
+              with JavaScript, React, Java, Python & Node.js.
             </p>
             <div className="hero-buttons">
               <a href="#projects" className="btn btn-primary">
@@ -138,7 +139,7 @@ const Hero = () => {
                 aria-label="CodeChef"
               >
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns={<SiCodechef />}
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -158,7 +159,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="hero-image">
-            <img src="./src\assets\profile.jpg" alt="Your Name" />
+            <img src={img1} alt="Your Name" />
           </div>
         </div>
       </div>

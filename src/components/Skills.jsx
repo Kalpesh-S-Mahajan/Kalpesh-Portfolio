@@ -1,193 +1,38 @@
 import "./Skills.css";
 
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare,
+  FaReact,
+  FaPython,
+  FaJava,
+  FaNode,
+  FaNetworkWired,
+  FaGithub,
+} from "react-icons/fa";
+
+import { SiTailwindcss, SiExpress, SiTensorflow } from "react-icons/si";
+
 const Skills = () => {
   const skills = [
-    {
-      name: "HTML5",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-        </svg>
-      ),
-    },
-    {
-      name: "CSS3",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-        </svg>
-      ),
-    },
-    {
-      name: "JavaScript",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-        </svg>
-      ),
-    },
-    {
-      name: "React",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-        </svg>
-      ),
-    },
-    // {
-    //   name: "Node.js",
-    //   icon: (
-    //     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    //       <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-    //     </svg>
-    //   )
-    // },
-    // {
-    //   name: "MongoDB",
-    //   icon: (
-    //     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    //       <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-    //     </svg>
-    //   )
-    // },
-    {
-      name: "Python",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-        </svg>
-      ),
-    },
-    {
-      name: "Java",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-        </svg>
-      ),
-    },
-    {
-      name: "Flask",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-        </svg>
-      ),
-    },
-    {
-      name: "OpenCV",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-        </svg>
-      ),
-    },
-    {
-      name: "Image Processing",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-        </svg>
-      ),
-    },
-    // {
-    //   name: "Git",
-    //   icon: (
-    //     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    //       <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-    //     </svg>
-    //   )
-    // }
+    // Existing Skills
+    { name: "HTML5", icon: <FaHtml5 size={40} color="#E44D26" /> },
+    { name: "CSS3", icon: <FaCss3Alt size={40} color="#1572B6" /> },
+    { name: "JavaScript", icon: <FaJsSquare size={40} color="#F7DF1E" /> },
+    { name: "React", icon: <FaReact size={40} color="#61DBFB" /> },
+    { name: "Python", icon: <FaPython size={40} color="#3776AB" /> },
+    { name: "Java", icon: <FaJava size={40} color="#007396" /> },
+
+    // ⭐ New Added Skills
+    { name: "Tailwind CSS", icon: <SiTailwindcss size={40} color="#38BDF8" /> },
+    { name: "Node.js", icon: <FaNode size={40} color="#3C873A" /> },
+    { name: "Express.js", icon: <SiExpress size={40} color="#000000" /> },
+    { name: "AI / ML", icon: <SiTensorflow size={40} color="#FF6F00" /> },
+    { name: "REST API", icon: <FaNetworkWired size={40} color="#FF7F50" /> },
+    { name: "Git & GitHub", icon: <FaGithub size={40} color="#000000" /> },
+    { name: "Spring MVC", icon: <FaJava size={40} color="#6DB33F" /> },
+    { name: "JDBC", icon: <FaJava size={40} color="#6DB33F" /> },
   ];
 
   return (

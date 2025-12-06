@@ -24,6 +24,10 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(147, 142, 231, 0.1);
+  }
 }
 
 .hero-image img {

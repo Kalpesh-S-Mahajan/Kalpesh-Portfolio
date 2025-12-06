@@ -22,7 +22,7 @@ const Header = ({ darkMode, setDarkMode }) => {
     <header className={`header ${isScrolled ? "scrolled" : ""}`}>
       <div className="container header-container">
         <a href="#" className="logo">
-          Portfolio
+          My Portfolio
         </a>
 
         <div className={`nav-container ${mobileMenuOpen ? "active" : ""}`}>

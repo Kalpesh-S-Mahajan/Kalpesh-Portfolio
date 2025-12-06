@@ -1,5 +1,6 @@
 import "./About.css";
-
+import img2 from "../assets/about.jpg";
+import obj1 from "../assets/Kalpesh_CV.pdf";
 const About = () => {
   return (
     <section id="about" className="about">
@@ -7,20 +8,17 @@ const About = () => {
         <div className="section-header">
           <h2 className="section-title">About Me</h2>
           <p className="section-subtitle">
-            Hi, I'm Kalpesh Mahajan, a passionate and aspiring web developer
-            keen to analyze and develop within the world of generation. As a
-            brisker, I am constantly excited to discover new frameworks and
-            technologies to decorate my abilties. My expertise lies in Java and
-            Core Java, and I am continuously running on increasing my know-how
-            to construct green and scalable net programs. I stay up for
-            participating, innovating, and contributing to impactful projects
-            inside the development area.
+            Hi, I'm Kalpesh Mahajan — a dedicated developer with a strong
+            foundation in Java, React, and full-stack development. I enjoy
+            learning new frameworks, building efficient applications, and
+            solving real-world problems through clean and scalable code. I look
+            forward to contributing to impactful and innovative projects.
           </p>
         </div>
 
         <div className="about-content">
           <div className="about-image">
-            <img src="./src\assets\aboutImage.jpg" alt="About me" />
+            <img src={img2} alt="About me" />
           </div>
 
           <div className="about-info">
@@ -40,8 +38,15 @@ const About = () => {
               <div className="info-text">
                 <h3>Certifications</h3>
                 <p>
-                  Certified in frontend development through Infosys Springboard,
-                  with expertise in HTML5, CSS, and JavaScript(July 2024)
+                  MERN Full Stack Development Training – ETHNUS (Infosys
+                  Foundation)
+                  <br />
+                  Full Stack Development Internship – R3Sys (Spring MVC & Java)
+                  <br />
+                  Zensar ESD Program – Core Java, JDBC, Python & SQL
+                  <br />
+                  Smart India Hackathon 2024 – Project: Crop Disease Prediction
+                  App
                 </p>
               </div>
             </div>
@@ -50,7 +55,10 @@ const About = () => {
               <div className="info-number">3</div>
               <div className="info-text">
                 <h3>Interests</h3>
-                <p>Open source, UI/UX design, and emerging technologies</p>
+                <p>
+                  Web app development and a passion for building engaging
+                  frontends.
+                </p>
               </div>
             </div>
 
@@ -65,7 +73,7 @@ const About = () => {
                   View Resume
                 </a>
                 <a
-                  href="./src\assets\Kalpesh_CV.pdf"
+                  href={obj1}
                   download="Kalpesh_CV.pdf"
                   className="btn btn-outline"
                 >
